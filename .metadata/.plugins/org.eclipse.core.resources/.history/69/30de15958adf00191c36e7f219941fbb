@@ -1,0 +1,25 @@
+package ie.gmit.sw;
+
+import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
+
+public class TestRunner {
+
+	public static void main(String[] args) {
+		KeyGenerator keyGen = KeyGenerator.getInstance("DES");
+		keyGen.init(128);
+		key key = keyGen.generateKey();
+		Cipher cypher = Cipher.getInstance("DES/ECB/PKCS5Padding");
+		cypher.init(Cipher.DECRYPT_MODE, key);
+		byte[] result = cypher.doFinal(cypherText);
+		KeyGenerator keyGen = KeyGenerator.getInstance("AES");
+		keyGen.init(128);
+		/*
+		key key = keyGen.generateKey();
+		Cipher cypher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+		cypher.init(Cipher.DECRYPT_MODE, key);
+		bytep[] result = cypher.doFinal(cypherText);
+		*/
+	}
+
+}

@@ -1,0 +1,23 @@
+package ie.gmit.sw;
+
+public class CypherFactory {
+	private static CypherFactory f = new CypherFactory();
+
+	private CypherFactory() {
+	}
+
+	public static CypherFactory getInstance() {
+		return f;
+	}
+	public Cypherable getCypherable(CypherMode mode) throws Throwable{
+		if(mode == CypherMode.Asymetric)
+		{
+			//return new RSACypher();
+		}
+		else
+		{
+			return new AESCypher();
+		}
+		return null;
+	}
+}

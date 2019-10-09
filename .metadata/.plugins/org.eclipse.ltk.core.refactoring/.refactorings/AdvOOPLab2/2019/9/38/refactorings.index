@@ -1,0 +1,3 @@
+1568809082878	Encapsulate field 'key'
+1568809113507	Encapsulate field 'key'
+1568810688026	Move type 'CypherKey' to new file

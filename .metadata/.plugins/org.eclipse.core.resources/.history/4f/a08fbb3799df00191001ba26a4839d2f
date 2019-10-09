@@ -1,0 +1,39 @@
+package ie.gmit.sw;
+
+import java.security.Key;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+
+import javax.crypto.Cipher;
+
+public class RSACypher extends AbstractCypher {
+
+	KeyPair keyRing;
+
+	public RSACypher() throws Throwable {
+		super();
+		KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
+		keyGen.initialize(2048);
+		keyRing = keyGen.generateKeyPair();
+		cypher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+
+	}
+	public byte[] encrypt(byte[] plainText, Key key) throws Throwable {
+		getCypher().init(getCypher().ENCRYPT_MODE, key);
+		return (plainText);
+	
+	}
+
+	public byte[] decrypt(byte[] cypherText, Key key) throws Throwable {
+		return decrypt(cypherText,keyRing.getPrivate());
+	}
+	public byte[] encrypt(byte[] plainText) throws Throwable {
+		return (encrypt(plainText));
+	
+	}
+
+	public byte[] decrypt(byte[] cypherText) throws Throwable {
+		return(decrypt(cypherText));
+	}
+
+}

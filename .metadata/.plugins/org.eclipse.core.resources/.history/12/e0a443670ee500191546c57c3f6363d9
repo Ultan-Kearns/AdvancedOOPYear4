@@ -1,0 +1,4 @@
+import ie.gmit.sw.crypto;
+module gmit.consumer {
+	requires ie.gmit.sw.crypto;
+}

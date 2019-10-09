@@ -1,0 +1,5 @@
+1569414265058	Extract superclass 'AbstractCypher'
+1569414323295	Encapsulate field 'cypher'
+1569414422565	Rename type 'TestRunner'
+1569415570623	Extract interface 'Cypherable'
+1569416056943	Rename type 'CypherType'

@@ -1,0 +1,5 @@
+package ie.gmit.sw;
+
+public enum Algorithm {
+	RSA, DES, AES, CAESAR, VIGENERE; 
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;ie.gmit.sw&apos; to &apos;AdvOOPLab4/src&apos;&#x0A;- Original project: &apos;oodppApplyingCompositionLab&apos;&#x0A;- Destination element: &apos;AdvOOPLab4/src&apos;&#x0A;- Original element: &apos;oodppApplyingCompositionLab/ie.gmit.sw&apos;&#x0A;- Update references to refactored element" description="Move package" destination="=AdvOOPLab4/src" element1="/&lt;ie.gmit.sw" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1570015210457" version="1.0"/>
+</session>

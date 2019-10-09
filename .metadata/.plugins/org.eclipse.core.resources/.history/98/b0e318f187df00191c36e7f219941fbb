@@ -1,0 +1,10 @@
+package ie.gmit.sw;
+
+import java.security.KeyPair;
+
+import javax.crypto.Cipher;
+
+public class RSACypher {
+	private Cipher cypher;
+	private KeyPair keypair;
+}
